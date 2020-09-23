@@ -8,10 +8,29 @@ namespace VerzioJezelesHF
 {
     class Program
     {
-        
+        public static  void Fel2(){
+            int i = 0;
+            int[] a = new int[10];
+            do
+            {
+                Console.WriteLine("Sza mok");
+                a[i] = int.Parse(Console.ReadLine());
+                i++;
+            } while (i!=10);
+
+            int sum = 0;
+            for (int s = 0; s < a.Length; s++)
+            {
+                sum += a[s];
+            }
+            Console.WriteLine("átlag:{0} ",sum/a.Length);
+
+        }
         static void Main(string[] args)
         {
-          
+            Fel2();
+
+            Console.ReadKey();
         }
     }
 }
