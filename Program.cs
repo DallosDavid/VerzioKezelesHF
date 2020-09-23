@@ -13,7 +13,7 @@ namespace VerzioJezelesHF
             int[] a = new int[10];
             do
             {
-                Console.WriteLine("Szamok");
+                Console.WriteLine("Sza mok");
                 a[i] = int.Parse(Console.ReadLine());
                 i++;
             } while (i!=10);
