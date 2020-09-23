@@ -10,13 +10,15 @@ namespace VerzioJezelesHF
     {
         public static  void Fel2(){
             int i = 0;
-            int[] a = new int[10];
+            Console.WriteLine("Mekora legyena a tomb");
+            int N = int.Parse(Console.ReadLine());
+            int[] a = new int[N];
             do
-            {
+            {               
                 Console.WriteLine("Sza mok");
                 a[i] = int.Parse(Console.ReadLine());
                 i++;
-            } while (i!=10);
+            } while (i!=N);
 
             int sum = 0;
             for (int s = 0; s < a.Length; s++)
