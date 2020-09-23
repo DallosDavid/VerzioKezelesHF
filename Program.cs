@@ -26,6 +26,26 @@ namespace VerzioJezelesHF
                 sum += a[s];
             }
             Console.WriteLine("átlag:{0} ",sum/a.Length);
+            int max = a[0];
+            for (int ss = 0;ss < a.Length; ss++)
+            {
+                if (a[ss]>max)
+                {
+                    max = a[ss];
+                }
+            }
+            Console.WriteLine("Max: " + max);
+            int min = a[0];
+            for (int sss = 0; sss < a.Length; sss++)
+            {
+                if (a[sss] < min)
+                {
+                    min = a[sss];
+                }
+            }
+
+
+            Console.WriteLine("Min: "+min);
 
         }
         static void Main(string[] args)
